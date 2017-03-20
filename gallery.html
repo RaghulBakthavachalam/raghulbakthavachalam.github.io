@@ -1,0 +1,523 @@
+<head>
+  <title>Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <script>
+  $(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+  
+ </head>
+ 
+<body style="background-image:url(http://sathiskumar.com/Raghul/Drawings/images/unnamed.jpg);background-position:auto;">
+ <div class="container">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Gallery</h1>
+        </div>
+
+        <div align="center">
+            <button class="btn btn-default filter-button active" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="statues">Statues</button>
+            <button class="btn btn-default filter-button" data-filter="nature">Nature</button>
+            <button class="btn btn-default filter-button" data-filter="god">God Drawings</button>
+            <button class="btn btn-default filter-button" data-filter="cartoons">Cartoons</button>
+            <button class="btn btn-default filter-button" data-filter="epics">Epics</button>
+        </div>
+        <br/>
+
+
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing1.jpeg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter statues">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing2.jpeg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter epics">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing3.jpeg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter statues">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing4.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter epics">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing5.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cartoons">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing6.jpeg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cartoons">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing7.jpeg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing8.jpeg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing9.jpeg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cartoons">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing10.jpeg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cartoons">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing11.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing12.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing13.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing14.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing15.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter statues">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing16.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing17.jpeg" class="img-responsive">
+            </div>
+            
+             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing19.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing20.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing21.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter epics">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing22.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter epics">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing23.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing24.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing25.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing26.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing27.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cartoons">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing28.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter epics">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing30.jpeg" class="img-responsive">
+            </div>
+            
+             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing31.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing32.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing33.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing34.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter epics">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing35.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing36.jpeg" class="img-responsive">
+            </div>
+            
+             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing37.jpeg" class="img-responsive">
+            </div>
+            
+             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing38.jpg" class="img-responsive">
+            </div>
+            
+             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing39.jpg" class="img-responsive">
+            </div>
+            
+             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter epics">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing40.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing41.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing42.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing43.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing44.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing45.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing46.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing47.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing48.jpeg" class="img-responsive">
+            </div>
+            
+             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter statues">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing49.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing50.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing51.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing52.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing53.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing54.jpeg" class="img-responsive">
+            </div>
+            
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter epics">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing55.jpeg" class="img-responsive">
+            </div>
+            
+             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cartoons">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing56.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing57.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing58.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing59.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing60.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing61.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter epics">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing62.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing63.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing64.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing65.jpeg" class="img-responsive">
+            </div>
+            
+             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing66.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing67.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing68.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing69.jpeg" class="img-responsive">
+            </div>
+
+             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cartoons">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing70.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cartoons">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing71.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cartoons">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing72.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cartoons">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing73.jpeg" class="img-responsive">
+            </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing74.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cartoons">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing75.jpg" class="img-responsive">
+            </div>
+            
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter god">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing76.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing77.jpg" class="img-responsive">
+            </div>
+            
+             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing78.jpeg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nature">
+                <img src="http://sathiskumar.com/Raghul/Drawings/images/drawings/Drawing79.jpeg" class="img-responsive">
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<div class="sticky-container">
+		<ul class="sticky">
+			<li>
+				<img width="32" height="32" title="" alt="" src="http://sathiskumar.com/Raghul/Drawings/images/home.png" style="border: medium none; border-radius: 0px; box-shadow: none;"/>
+				<a href="http://sathiskumar.com/Raghul/Drawings/" target="_blank"><p>HOME</p></a>
+			</li>
+			
+			<li>
+				<img width="32" height="32" title="" alt="" src="http://sathiskumar.com/Raghul/Drawings/images/Ampeross-Qetto-2-Gallery.ico" style="border: medium none; border-radius: 0px; box-shadow: none;"/>
+				<a href="http://sathiskumar.com/Raghul/Drawings/gallery.php" target="_blank"><p>GALLERY</p></a>
+			</li>
+			
+			<li>
+			        <img width="32" height="32" title="" alt="" src="http://sathiskumar.com/Raghul/Drawings/images/contact.ico" style="border: medium none; border-radius: 0px; box-shadow: none;"/>
+				<a href="http://sathiskumar.com/Raghul/Drawings/contact.php" target="_blank"><p>CONTACT</p></a>
+			</li>
+		</ul>
+	</div>
+
+ </body>
+ 
+ 
+ <style>
+ 
+ img {
+  border: medium solid gray;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px 2px violet;
+}
+.gallery-title
+{
+    font-size: 52px;
+    color: gold;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px black;
+    font-weight:bold;
+    border:none;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.filter-button.active
+{
+    background-color: #42B32F;
+    color: white;
+}
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+.sticky-container{
+		/*background-color: #333;*/
+		padding: 0px;
+		margin: 0px;
+		position: fixed;
+		right: -119px;
+		top:130px;
+		width: 200px;
+		text-align: left;
+
+	}
+
+	.sticky li{
+		list-style-type: none;
+		background-color: #333;
+		color: #efefef;
+		height: 43px;
+		padding: 0px;
+		margin: 0px 0px 1px 0px;
+		-webkit-transition:all 0.25s ease-in-out;
+		-moz-transition:all 0.25s ease-in-out;
+		-o-transition:all 0.25s ease-in-out;
+		transition:all 0.25s ease-in-out;
+		cursor: pointer;
+		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); 
+                filter: gray; 
+                -webkit-filter: grayscale(100%); 
+
+	}
+
+	.sticky li:hover{
+		margin-left: -110px;
+		/*-webkit-transform: translateX(-115px);
+		-moz-transform: translateX(-115px);
+		-o-transform: translateX(-115px);
+		-ms-transform: translateX(-115px);
+		transform:translateX(-115px);*/
+		/*background-color: #8e44ad;*/
+		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+                -webkit-filter: grayscale(0%);
+	}
+
+	.sticky li img{
+		float: left;
+		margin: 5px 5px;
+		margin-right: 10px;
+
+	}
+
+	.sticky li p{
+		padding: 0px;
+		margin: 0px;
+		text-transform: uppercase;
+		line-height: 43px;
+
+	}
+
+
+
+
+</style>
