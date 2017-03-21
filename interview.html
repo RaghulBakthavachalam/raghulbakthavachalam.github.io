@@ -9,19 +9,26 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
     <script>
-	 $(document).ready(function() {
-  $('#media').carousel({
-    pause: true,
-    interval: false,
-  });
+	$(document).ready(function() {
+    $('#myCarousel').carousel({
+	interval: 10000
+	})
+    
+    $('#myCarousel').on('slid.bs.carousel', function() {
+    	//alert("slid");
+	});
+    
+    
 });
+
+
   </script>
 </head>
 <body>
   <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">YourLogo Here</a>
+      <a class="navbar-brand" href="#">Your Logo Here</a>
     </div>
     <ul class="nav navbar-nav" style="float:right;">
       <li class="active"><a href="#">Home</a></li>
@@ -30,112 +37,70 @@
       <li><a href="#">Page 3</a></li>
     </ul>
   </div>
-
-  <div class="container-fluid">
-<section class="web_disigner">
-<div class="web_disigner_contain">
-  <center><h1  style=" display:inline;">Featured Web Developer</h1></center>
+</nav> 
   <div class="container">
-  <div class='row'>
-    <div class='col-md-12'>
-      <div class="carousel slide media-carousel" id="media">
-        <div class="carousel-inner">
-          <div class="item  active">
-            <div class="row">
-              <div class="col-md-4 padtop30">
-                <center><div class="parent_circle">
-                  <div class="parent_circle_contain">
-                  <p>R JOSHI </p>
-                  <p>Developer PROFILE</p>
-                  <a href="#">Know More...</a>
+    <div class="col-md-12">
+         <h1>Bootstrap Thumbnail Slider</h1>
+
+        <div class="well">
+            <div id="myCarousel" class="carousel slide">
+                
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-3"><a href="#x"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
                 </div>
-                <div class=" child_round_circle child_round_circle_img1">
-                  
-                </div>
-                </div>
-                </center>
-              </div>          
-              <div class="col-md-4 padtop30">
-               <center><div class="parent_circle">
-               <div class="parent_circle_contain">
-                  <p>ABHISHEK</p>
-                  <p>DESIGNER PROFILE</p>
-                  <a href="#">Know More...</a>
-                </div>
-                <div class="child_round_circle child_round_circle_img2  ">
-                  
-                </div>
-                </div>
-                </center>
-              </div>
-              <div class="col-md-4 padtop30">
-            <center> <div class="parent_circle">
-                  <div class="parent_circle_contain">
-                  <p>DEV</p>
-                  <p>DESIGNER PROFILE</p>
-                  <a href="#">Know More...</a>
-                </div>
-                <div class=" child_round_circle child_round_circle_img3 ">
-                  
-                </div>
-                </div>
-                </center> 
-              </div>        
+                <!--/carousel-inner--> 
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
             </div>
-          </div>
-          <div class="item">
-            <div class="row">
-              <div class="col-md-4 padtop30">
-                <center><div class="parent_circle">
-                  <div class="parent_circle_contain">
-                  <p>VINITA</p>
-                  <p>DESIGNER PROFILE</p>
-                  <a href="#">Know More...</a>
-                </div>
-                <div class=" child_round_circle child_round_circle_img4 ">
-                  
-                </div>
-                </div>
-                </center>
-              </div>              
-              <div class="col-md-4 padtop30">
-                <center><div class="parent_circle">
-                  <div class="parent_circle_contain">
-                  <p>M . KHAN</p>
-                  <p>Developer PROFILE</p>
-                  <a href="#">Know More...</a>
-                </div>
-                <div class=" child_round_circle child_round_circle_img5">
-                  
-                </div>
-                </div>
-                </center>
-              </div>    
-               <div class="col-md-4 padtop30">
-                <center><div class="parent_circle">
-                  <div class="parent_circle_contain">
-                  <p>BRIJESH</p>
-                  <p>DESIGNER PROFILE</p>
-                  <a href="#">Know More...</a>
-                </div>
-                <div class=" child_round_circle child_round_circle_img6">
-                  
-                </div>
-                </div>
-                </center>
-              </div>            
-            </div>
-          </div>
-          
+            <!--/myCarousel-->
         </div>
-        <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
-        <a data-slide="next" href="#media" class="right carousel-control">›</a>
-      </div>                          
+        <!--/well-->
     </div>
-  </div>
 </div>
-</div>
- </nav> 
+ 
 
 </body>
   
@@ -145,137 +110,10 @@
   
   <style>
     
-   .media-carousel 
-{
-  margin-bottom: 0;
-  padding: 0 40px 30px 40px;
-  margin-top: 30px;
+  .carousel-control {
+  padding-top:10%;
+  width:5%;
 }
-/* Previous button  */
-.media-carousel .carousel-control.left 
-{
-  left: -12px;
-  background-image: none;
-  background: none repeat scroll 0 0 #222222;
-  border: 4px solid #FFFFFF;
-  border-radius: 23px 23px 23px 23px;
-  height: 40px;
-  width : 40px;
-  margin-top: 30px
-}
-/* Next button  */
-.media-carousel .carousel-control.right 
-{
-  right: -12px !important;
-  background-image: none;
-  background: none repeat scroll 0 0 #222222;
-  border: 4px solid #FFFFFF;
-  border-radius: 23px 23px 23px 23px;
-  height: 40px;
-  width : 40px;
-  margin-top: 30px
-}
-/* Changes the position of the indicators */
-.media-carousel .carousel-indicators 
-{
-  right: 50%;
-  top: auto;
-  bottom: 0px;
-  margin-right: -19px;
-}
-/* Changes the colour of the indicators */
-.media-carousel .carousel-indicators li 
-{
-  background: #c0c0c0;
-}
-.media-carousel .carousel-indicators .active 
-{
-  background: #333333;
-}
-.media-carousel img
-{
-  width: 250px;
-  height: 100px
-}
-/* here is custom styling */
-.web_disigner {
-  background: #43b8e3;
-  min-height: 400px; }
-  .web_disigner .web_disigner_contain {
-    padding: 80px 0px; }
-  .web_disigner .parent_circle {
-    background: #63cdf4 none repeat scroll 0 0;
-    border: 15px solid #30a9d4;
-    border-radius: 50%;
-    height: 170px;
-    width: 170px;
-    display: table;
-    position: relative; }
-    .web_disigner .parent_circle .parent_circle_contain {
-      display: table-cell;
-      vertical-align: middle;
-      font-size: 13px;
-      text-align: center;
-      font-weight: 600; }
-    .web_disigner .parent_circle .child_round_circle {
-      border: 15px solid #63cdf4;
-      border-radius: 50%;
-      height: 120px;
-      left: 125px;
-      position: absolute;
-      top: -25px;
-      width: 120px; }
-    .web_disigner .parent_circle .child_round_circle_img1 {
-      background: url("http://imensosoftware.com/wp-content/uploads/2016/01/1.jpg");
-      background-size: 100%; }
-    .web_disigner .parent_circle .child_round_circle_img2 {
-      background: transparent url("http://imensosoftware.com/wp-content/uploads/2016/01/2.jpg") repeat scroll 0 -11px/100% auto; 
-      
-      background-position:top;
-      
-      }
-    .web_disigner .parent_circle .child_round_circle_img3 {
-      background: url("http://imensosoftware.com/wp-content/uploads/2016/01/8.jpg");
-      background-size: 100%; }
-    .web_disigner .parent_circle .child_round_circle_img4 {
-      background: url("http://imensosoftware.com/wp-content/uploads/2016/01/9.jpg");
-      background-size: 100%; }
-    .web_disigner .parent_circle .child_round_circle_img5 {
-      background: url("http://imensosoftware.com/wp-content/uploads/2016/01/6.jpg");
-      background-size: 100%; }
-    .web_disigner .parent_circle .child_round_circle_img6 {
-      background: url("http://imensosoftware.com/wp-content/uploads/2016/01/5.jpg");
-      background-size: 100%; }
-
-.padtop30 {
-  padding-top: 30px; }
-  
-  /* here is our responsive css */
-  
-  @media only screen and (max-width: 360px) 
-  {
-      .web_disigner .parent_circle .child_round_circle 
-    {
-    border: 15px solid #63cdf4;
-    border-radius: 50%;
-    height: 100px;
-    left: 100px;
-    position: absolute;
-    top: -38px;
-    width: 100px;
-    }
-    .media-carousel .carousel-control.left{
-    
-    margin-top: 290px;
-   
-}
-.media-carousel .carousel-control.right{
-    
-    margin-top: 290px;
-   
-}
-  }
-    
   </style>
   
   
