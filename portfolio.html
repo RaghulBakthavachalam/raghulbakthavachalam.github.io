@@ -1,74 +1,25 @@
 <html>
-<head>
-   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
-   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	
-	<script>
-		(function() {
-  'use strict';
-
-  angular.module('navBarDemoBasicUsage', ['ngMaterial'])
-      .controller('AppCtrl', AppCtrl);
-
-  function AppCtrl($scope) {
-    $scope.currentNavItem = 'page1';
-  }
-})();
-	</script>
-	
-</head>
-<body>
-   
-
-<div ng-controller="AppCtrl" ng-cloak>
-  <md-content class="md-padding">
-    <md-nav-bar
-      md-selected-nav-item="currentNavItem"
-      nav-bar-aria-label="navigation links">
-      <md-nav-item md-nav-click="goto('page1')" name="page1">
-        Page One
-      </md-nav-item>
-      <md-nav-item md-nav-click="goto('page2')" name="page2">
-        Page Two
-      </md-nav-item>
-      <md-nav-item md-nav-click="goto('page3')" name="page3">
-        Page Three
-      </md-nav-item>
-      <!-- these require actual routing with ui-router or ng-route, so they
-      won't work in the demo
-      <md-nav-item md-nav-href="#page4" name="page5">Page Four</md-nav-item>
-      <md-nav-item md-nav-sref="app.page5" name="page4">Page Five</md-nav-item>
-      You can also add options for the <code>ui-sref-opts</code> attribute.
-      <md-nav-item md-nav-sref="page6" sref-opts="{reload:true, notify:true}">
-        Page Six
-      </md-nav-item>
-      -->
-    </md-nav-bar>
-    <div class="ext-content">
-      External content for `<span>{{currentNavItem}}</span>`.
-    </div>
-
-    <md-checkbox ng-model="disableInkBar">Disable Ink Bar</md-checkbox>
-
-  </md-content>
-</div>
-</body>
+   <head>
+      <title>The Material Design Lite Example</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+      <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+         <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Material Design</span>
+            <nav class="mdl-navigation">
+               <a class="mdl-navigation__link" href="">Home</a>
+               <a class="mdl-navigation__link" href="">Features</a>
+               <a class="mdl-navigation__link" href="">About Us</a>
+               <a class="mdl-navigation__link" href="">Log Out</a>
+            </nav>
+         </div>
+         <main class="mdl-layout__content">
+            <div class="page-content" style="padding-left:100px;">Hello World!</div>
+         </main>
+      </div>
+   </body>
 </html>
-
-<style>
-
-
-
-.navBardemoBasicUsage md-content .ext-content {
-  padding: 50px;
-  margin: 20px;
-  background-color: #FFF2E0; }
-
-
-
-
-	
-</style>
-
-
