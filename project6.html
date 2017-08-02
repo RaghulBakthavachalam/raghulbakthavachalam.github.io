@@ -29,30 +29,63 @@ color:#27669E;
 h3{
 font-family: font84197;
 }
+
+ <script>
+ $(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+    $('.add').hide();
+  } else {
+    $('nav').removeClass('shrink');
+    $('.add').show();
+    
+  }
+});
+ </script>
+
  </style>   
 	</head>
     <body>
     
     
-    <div class="bar">  
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <div class="bar">  
      
             <button id="demo_menu-lower-left" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" data-upgraded=",MaterialButton">  
                <i class="material-icons">apps</i>
             </button>
             <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
                for="demo_menu-lower-left">
-               <li class="mdl-menu__item"><a href="https://raghulbakthavachalam.github.io/"><img src="https://arjunarju.github.io/Arjunramesh/home.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">Home</b></li></a><br>
+               <li class="mdl-menu__item"><a href="https://raghulbakthavachalam.github.io/"><img src="https://raghulbakthavachalam.github.io/images/Down arrow.jpg" style="width: 30px;"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">Download My CV</b></li></a><br>
                
-               <li class="mdl-menu__item"><a href="https://raghulbakthavachalam.github.io/about.html"><img src="https://arjunarju.github.io/Arjunramesh/about.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">About</b></li></a><br>
-                <li class="mdl-menu__item"><a href="https://raghulbakthavachalam.github.io/portfolio.html"><img src="https://arjunarju.github.io/Arjunramesh/gaarjun.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">Portfolio</b></li></a><br>
-                 <li class="mdl-menu__item"><a href="https://raghulbakthavachalam.github.io/contact1.html"><img src="https://arjunarju.github.io/Arjunramesh/arjucon.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">Contact</b></li></a><br>
-                 <li class="mdl-menu__item"><a href="https://raghulbakthavachalam.github.io/hireme.html"><img src="https://raghulbakthavachalam.github.io/images/winner_cup.png" style="width: 34%;"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">Hire Me</b></li></a> 
+               
                    
             </ul>
                    
          </div>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="https://raghulbakthavachalam.github.io/">Home</a></li>
+        <li><a href="https://raghulbakthavachalam.github.io/about.html">About</a></li>
+        <li><a href="https://raghulbakthavachalam.github.io/portfolio.html">Portfolio</a></li>
+         <li><a href="https://raghulbakthavachalam.github.io/contact1.html">Contact</a></li>
+          <li><a href="https://raghulbakthavachalam.github.io/hireme.html">Hire Me</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
          <header class="clearfix">
-				<center><h1 style="font-size: 50px; font-weight: bold; color: white; text-shadow: 2px 2px 2px black;font-family: 'Dancing Script', cursive;">ENGAGEMENT OVERVIEW</h1><br/> </header>
+				<center><h1 style="font-weight: bold; color: white; text-shadow: 2px 2px 2px black;font-family: 'Dancing Script', cursive;">ENGAGEMENT OVERVIEW</h1><br/> </header>
                 
                 <div class="container">
   <div class="row">
@@ -161,10 +194,7 @@ header {
          
          color: white;
          width: 100%;
-         height: 60px;
-         padding: 16px;
-		 position: fixed;
-z-index: 9000;
+         
 		 
       }
 
@@ -216,7 +246,49 @@ z-index: 9000;
 }
 
 
+body {
+  padding-top: 50px;
+}
+*{
+    transition: all 0.3s;}
+nav a {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  font-size: 18px;
+}
+.navbar-inverse{
+    background-color:#27669E;
+    }
+nav .navbar-toggle {
+  margin: 13px 15px 13px 0;
+}
 
+.navbar-brand {
+  font-size: 30px;
+}
+
+
+
+nav.navbar.shrink {
+  min-height: 35px;
+}
+
+nav.shrink a {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 15px;
+}
+
+nav.shrink .navbar-brand {
+  font-size: 25px;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 15px 8px 0;
+}
+.add{
+    background-color:#ff0;}
 
 
 </style>
