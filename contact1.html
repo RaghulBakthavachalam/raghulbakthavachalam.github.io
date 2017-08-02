@@ -27,26 +27,59 @@ font-family: font84197;
 p{
 font-family: font84197;
 }
- </style>     
+ </style>  
+ 
+  <script>
+ $(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+    $('.add').hide();
+  } else {
+    $('nav').removeClass('shrink');
+    $('.add').show();
+    
+  }
+});
+ </script>
+    
 </head>
 <body>
- <div class="bar">  
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <div class="bar">  
      
             <button id="demo_menu-lower-left" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" data-upgraded=",MaterialButton">  
                <i class="material-icons">apps</i>
             </button>
             <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
                for="demo_menu-lower-left">
-               <li class="mdl-menu__item"><a href="https://raghulbakthavachalam.github.io"><img src="https://arjunarju.github.io/Arjunramesh/home.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">Home</b></li></a><br>
+               <li class="mdl-menu__item"><a href="https://raghulbakthavachalam.github.io/"><img src="https://raghulbakthavachalam.github.io/images/Down arrow.jpg" style="width: 30px;"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">Download My CV</b></li></a><br>
                
-               <li class="mdl-menu__item"><a href="https://raghulbakthavachalam.github.io/about.html"><img src="https://arjunarju.github.io/Arjunramesh/about.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">About</b></li></a><br>
-                <li class="mdl-menu__item"><a href="https://raghulbakthavachalam.github.io/portfolio.html"><img src="https://arjunarju.github.io/Arjunramesh/gaarjun.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">Portfolio</b></li></a><br>
-                 <li class="mdl-menu__item"><img src="https://arjunarju.github.io/Arjunramesh/arjucon.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;color: gold;text-shadow: 2px 2px 2px black;">Contact</b></li><br>
-                 
-                  <li class="mdl-menu__item"><a href="https://raghulbakthavachalam.github.io/hireme.html"><img src="https://raghulbakthavachalam.github.io/images/winner_cup.png" style="width: 34%;"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">Hire Me</b></li></a> 
+               
+                   
             </ul>
                    
          </div>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="https://raghulbakthavachalam.github.io/">Home</a></li>
+        <li><a href="https://raghulbakthavachalam.github.io/about.html">About</a></li>
+        <li><a href="https://raghulbakthavachalam.github.io/portfolio.html">Portfolio</a></li>
+         <li><a href="https://raghulbakthavachalam.github.io/contact1.html">Contact</a></li>
+          <li><a href="https://raghulbakthavachalam.github.io/hireme.html">Hire Me</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
     <br>
     <br>
  <div class="container">
@@ -55,7 +88,7 @@ font-family: font84197;
         <div class="col-sm-4">
                <div class="card-container">
                 <div class="card">
-                    <div class="front">
+                    <div class="front" style="background:#C8E4ED;">
                         <div class="cover">
                             <img src="https://arjunarju.github.io/Arjunramesh/rotating_card_thumb2.png"/>
                         </div>
@@ -73,24 +106,31 @@ font-family: font84197;
                             </div>
                         </div>
                     </div> <!-- end front panel -->
-                    <div class="back">
+                    <div class="back" style="background:#BCBCBC;">
                         
                         <div class="content">
                             <div class="main">
                                 
-                        <center><img src="https://arjunarju.github.io/Arjunramesh/gmailicon.ico" style="width: 38px; height: 36px;font-family: font84197;">  <a href="mailto:raghulbakthavachalam@gmail.com?Subject=Hello%20again" target="_top">raghulbakthavachalam@</a>
+                       <img src="https://raghulbakthavachalam.github.io/images/12633-200.png" style="width: 27px; height: 36px;font-family: font84197;">  <a href="mailto:raghulbakthavachalam@gmail.com?Subject=Hello%20again" target="_blank">raghulbakthavachalam@</a>
                         <br/>
                           <br/>
-                        <img src="https://arjunarju.github.io/Arjunramesh/phoneicon.png" style="width: 38px; height: 36px;font-family: font84197;"> <a href="tel:9626833584">+91-9626833584</a>
-                            </div></center>
+                        <img src="https://raghulbakthavachalam.github.io/images/13-128.png" style="width: 38px; height: 36px;font-family: font84197;"> <a href="tel:9626833584">+91-9626833584</a>
+                        <br/><hr/>
+                        <h3>Current Office Location</h3>
+                        <img src="https://raghulbakthavachalam.github.io/images/in_symbol.png" style="width: 40px; height: 36px;font-family: font84197;">  <a href="http://websupportteam.com/" target="_blank">Netventix Technologies</a>
+                        <br/>
+                        <img src="https://raghulbakthavachalam.github.io/images/64113.png" style="width: 32px; height: 36px;font-family: font84197;">  <a href="https://www.google.co.in/maps/search/72,+sriram+nagar.+selaiyur+chennai/@12.9271988,80.1422066,17z/data=!3m1!4b1" target="_blank">Tambaram</a>
+                        
+                            </div>
                             
                         </div>
                         <br>
                         <div class="footer">
                         
                             <div class="social-links text-center">
-                                <a href="https://www.facebook.com/people/Arjun-R/100000516024634" target="_blank"><img src="https://arjunarju.github.io/Arjunramesh/facebook-512.png" style="width: 28px; height: 26px;"></a>
-                                <a href="#"><img src="https://arjunarju.github.io/Arjunramesh/black-color-instagram-icon-png.png" style="width: 28px; height: 26px;"></a>&nbsp;
+                                <a href="https://www.facebook.com/raghulbakthavachalam" target="_blank"><img src="https://arjunarju.github.io/Arjunramesh/facebook-512.png" style="width: 28px; height: 26px;"></a>
+                                <a href="https://twitter.com/Raghul_2191" target="_blank"><img src="https://raghulbakthavachalam.github.io/images/8800.png" style="width: 28px; height: 26px;"></a>&nbsp;
+                                 <a href="https://in.linkedin.com/in/raghul-bakthavachalam-a1a794119" target="_blank"><img src="https://raghulbakthavachalam.github.io/images/linkedin.ico" style="width: 28px; height: 26px;"></a>&nbsp;
                                 
                             </div>
                         </div>
@@ -231,19 +271,13 @@ js_cobject_arr['cid28920438']=0;
 
 
 <style>
-body{
-background-image:url(https://raghulbakthavachalam.github.io/images/social-media-1847220_1920.png);
-background-position: 100% center;
-}
+
 .bar {
          box-sizing: border-box;
          
          color: white;
          width: 100%;
-         height: 60px;
-         padding: 16px;
-		 position: fixed;
-         z-index: 9000;
+        
 		
       }
 textarea {
@@ -279,13 +313,50 @@ textarea {
 .raghulform {
   opacity: 0.82;
 }
-	img{
-	-webkit-filter: grayscale(1);
-	cursor: pointer;
-	transition: all .5s ease;
+
+
+body {
+  padding-top: 50px;
 }
-img:hover{
-	-webkit-filter: grayscale(0);
-  transform: scale(1.2,1.2);
+*{
+    transition: all 0.3s;}
+nav a {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  font-size: 18px;
 }
+.navbar-inverse{
+    background-color:#27669E;
+    }
+nav .navbar-toggle {
+  margin: 13px 15px 13px 0;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+
+
+nav.navbar.shrink {
+  min-height: 35px;
+}
+
+nav.shrink a {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 15px;
+}
+
+nav.shrink .navbar-brand {
+  font-size: 25px;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 15px 8px 0;
+}
+.add{
+    background-color:#ff0;}
+
 </style>
