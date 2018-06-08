@@ -29,7 +29,52 @@ font-family: font84197;
 }
  </style>  
  
-  
+  <!-- CandyPixel V1.2.0 -->
+<script>
+var bLock = false;
+var dLast = 0;
+var cp_script = new Array();
+
+var cp_token = "L3m1CiOjhvXZzLZqn44qQ7WuOS0_jmFVVRYpqVNNgDA=";
+var cp_pid = 100018;
+var cp_psid = 222;
+var cp_peid = "";
+
+function cp_loaddscript(array, callback) {
+    var loader = function (src, handler) {
+        var script = document.createElement("script");
+        script.src = src;
+        script.onload = script.onreadystatechange = function () {
+            script.onreadystatechange = script.onload = null;
+            handler();
+        }
+        var head = document.getElementsByTagName("head")[0];
+        (head || document.body).appendChild(script);
+    };
+    (function run() {
+        if (array.length != 0) {
+            loader(array.shift(), run);
+        } else {
+            callback && callback();
+        }
+    })();
+}
+
+if (null==window.jQuery||null==$||$.fn.jquery.replace(/\.(\d)/g,".0$1").replace(/\.0(\d{2})/g,".$1") < "1.07.00"){
+ cp_script.push('https://api.salescandy.com/js/jquery.1.12.4.min.js');
+}
+cp_script.push('https://staging-api.salescandy.com/js/js.cookie.min.js');
+cp_script.push('https://staging-api.salescandy.com/js/bluebird.3.5.0.min.js');
+cp_script.push('https://staging-api.salescandy.com/js/V1.2/globalfunc.js');
+
+cp_loaddscript(cp_script, function () {
+ //call back function after script loaded
+ initCP();
+});
+</script>
+	
+	
+	
     
 </head>
 <body>
